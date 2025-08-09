@@ -1,0 +1,124 @@
+/* Navbar Styles */
+.navbar {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Container with 3 items: [hamburger] [logo] [placeholder] */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3; /* Ensure above nav */
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animation for open state */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Empty div to balance the flex layout */
+.menu-placeholder {
+  width: 1.5rem; /* Same width as hamburger */
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  padding: var(--space-sm);
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: var(--font-size-base);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a:last-child {
+  border-bottom: none;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+}
+
+#logo-image {
+  max-height: 2.25rem; /* or whatever size fits your navbar */
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+

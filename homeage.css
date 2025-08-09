@@ -1,0 +1,479 @@
+.hero-gallery {
+  padding: var(--space-md) var(--space-xs);
+  background-color: #222;
+  text-align: center
+}
+
+.hero-gallery h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-primary)
+}
+
+.gallery-items {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch
+}
+
+.gallery-card {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  scroll-snap-align: center;
+  background: #fff;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgb(255 255 255 / .1)
+}
+
+.gallery-card:hover {
+  transform: scale(1.05)
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover
+}
+
+.gallery-label {
+  padding: var(--space-xs);
+  font-weight: 700;
+  color: hsl(50 100% 50%);
+  background-color: #222;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%23ff0000' fill-opacity='0.62' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px
+}
+
+.logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff
+}
+
+#logo-image {
+  max-height: 2.25rem;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px
+}
+
+#about-us {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 1rem 0 2rem 0
+}
+
+#about-us h2 {
+  margin: 0 3rem 0
+}
+
+#about-us p {
+  margin-bottom: 1rem
+}
+
+#about-us a {
+  display: inline-block;
+  color: #222;
+  background-color: var(--color-primary);
+  padding: 14px 28px;
+  border-radius: 59px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background-color 0.3s ease
+}
+
+#about-us a:active {
+  color: var(--color-primary);
+  background-color: #222
+}
+
+.parallax-section {
+  background-image: url(./public/dish-6.webp);
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center
+}
+
+.parallax-content {
+  background: rgb(0 0 0 / .5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 90%
+}
+
+.parallax-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: .5rem
+}
+
+.parallax-content p {
+  font-size: 1rem
+}
+
+.reviews-section {
+  background-color: antiquewhite;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.reviews-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden
+}
+
+.reviews-wrapper {
+  display: flex;
+  transition: transform 0.6s ease
+}
+
+.review-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgb(0 0 0 / .1);
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #f4b400;
+  margin-bottom: 1rem;
+  letter-spacing: 2px
+}
+
+.review-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1.5rem;
+  max-width: 600px
+}
+
+.review-author {
+  font-weight: 700;
+  color: #333
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(255 255 255 / .8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background-color 0.3s
+}
+
+.arrow:hover {
+  background-color: rgb(255 255 255)
+}
+
+.arrow.left {
+  left: -10px
+}
+
+.arrow.right {
+  right: -10px
+}
+
+@media (min-width:768px) {
+  .navbar-container {
+    justify-content: space-between;
+    position: static
+  }
+
+  .logo {
+    position: static;
+    transform: none
+  }
+
+  .menu-toggle,
+  .menu-placeholder {
+    display: none
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: 0
+  }
+
+  .nav-links a {
+    border: none;
+    padding: 0
+  }
+}
+
+
+/* ============================
+   DESKTOP LAYOUT (≥ 1024px)
+   ============================ */
+@media (min-width: 1024px) {
+  /* Generic container width for desktop */
+  .container, #container {
+    max-width: 1120px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  /* Navbar: a bit more breathing room + spacing */
+  .navbar {
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .navbar-container {
+    min-height: 72px;
+  }
+  .nav-links {
+    gap: 1.25rem;
+  }
+  .nav-links a {
+    padding: .35rem .5rem;
+    border-radius: 6px;
+  }
+  .nav-links a:hover {
+    background: rgba(255,255,255,.06);
+  }
+
+  /* ============================
+     Hero gallery -> grid (no horizontal scroll)
+     ============================ */
+  .hero-gallery {
+    padding: 3rem 0 2rem;
+    background-color: #1d1d1d; /* slightly lighter than #222 for depth */
+  }
+
+  .hero-gallery h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-items {
+    /* replace the horizontal scroller with a tidy grid */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    overflow: visible;              /* stop the scrollbars on desktop */
+    padding-bottom: 0;
+    scroll-snap-type: none;
+  }
+
+  .gallery-card {
+    width: auto;                    /* let the grid decide width */
+    border-radius: 14px;
+    transition: transform .2s ease, box-shadow .2s ease;
+    box-shadow: 0 10px 26px rgba(0,0,0,.18);
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(0,0,0,.22);
+  }
+
+  .gallery-card img {
+    height: 180px;                  /* a bit taller on desktop */
+    object-position: center;
+  }
+
+  .gallery-label {
+    padding: .6rem .75rem;
+    font-weight: 800;
+    letter-spacing: .2px;
+    border-top: 1px solid rgba(255,255,255,.06);
+  }
+
+  /* ============================
+     About section
+     (center content and tighten line-length)
+     ============================ */
+  #about-us {
+    padding: 3.25rem 0 3.5rem;
+  }
+
+  #about-us #container {
+    max-width: 920px;               /* narrower for comfortable reading */
+  }
+
+  #text-container {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  #about-us h2 {
+    font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2rem);
+    margin: 0 0 .75rem;
+  }
+
+  #about-us p {
+    margin: 0 auto 1.25rem;
+    max-width: 70ch;                /* keep paragraphs readable */
+    line-height: 1.7;
+  }
+
+  #about-us a.btn {
+    padding: 14px 26px;
+    font-weight: 700;
+  }
+
+  /* ============================
+     Parallax: taller and calmer on desktop
+     ============================ */
+  .parallax-section {
+    height: 420px;
+    background-position: center 40%;
+  }
+
+  .parallax-content {
+    padding: 2rem 2.25rem;
+    border-radius: 12px;
+    max-width: 720px;
+  }
+
+  .parallax-content h2 {
+    font-size: clamp(1.6rem, 1.2vw + 1rem, 2rem);
+  }
+
+  .parallax-content p {
+    font-size: 1.05rem;
+  }
+
+  /* ============================
+     Reviews: bigger canvas, subtle arrows, same slider logic
+     ============================ */
+  .reviews-section {
+    padding: 4.5rem 0;
+  }
+
+  .reviews-container {
+    max-width: 920px;
+  }
+
+  .review-card {
+    padding: 3.25rem 3rem;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+  }
+
+  .stars {
+    font-size: 1.35rem;
+  }
+
+  .review-text {
+    font-size: 1.1rem;
+    max-width: 62ch;
+  }
+
+  .arrow {
+    font-size: 1.6rem;
+    padding: .4rem .8rem;
+    background-color: rgba(255,255,255,.85);
+    transition: transform .15s ease, background-color .15s ease;
+  }
+  .arrow:hover { transform: scale(1.06); }
+  .arrow.left  { left: -6px; }
+  .arrow.right { right: -6px; }
+
+  /* ============================
+     Contact + Map: two-column layout
+     ============================ */
+  #contact-us .container {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr; /* map + details */
+    gap: 1.75rem;
+    align-items: start;
+    padding-block: 3rem;
+  }
+
+  .map-container {
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 22px rgba(0,0,0,.12);
+  }
+
+  /* Stack the contact items neatly */
+  #contact-us .contact-item {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    gap: .6rem;
+    padding: .85rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+    margin-bottom: .75rem;
+  }
+  #contact-us .contact-item i {
+    color: #222;
+  }
+  #contact-us .contact-item a {
+    text-decoration: none;
+  }
+  #contact-us .contact-item a:hover {
+    text-decoration: underline;
+  }
+
+  /* If your sticky footer is meant for mobile quick actions,
+     hide it on desktop so it doesn't clutter */
+  #sticky-footer {
+    display: none;
+  }
+}
+
+/* ============================
+   LARGE DESKTOP (≥ 1280px)
+   — give everything a touch more room
+   ============================ */
+@media (min-width: 1280px) {
+  .container, #container { max-width: 1200px; }
+
+  .gallery-items { gap: 1.25rem; }
+  .gallery-card img { height: 200px; }
+
+  .parallax-section { height: 520px; }
+  .parallax-content { max-width: 780px; }
+
+  .reviews-container { max-width: 1000px; }
+}

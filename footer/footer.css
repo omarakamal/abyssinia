@@ -1,0 +1,88 @@
+
+
+
+
+/* Contact Us Section */
+#contact-us {
+  background-color: #8B0000; /* deep red */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: sans-serif;
+}
+
+#contact-us .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contact-item i {
+  font-size: 1.3rem;
+  margin-right: 0.75rem;
+  color: yellow;
+}
+
+
+.map-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.contact-item a:link{
+  color:aliceblue;
+}
+
+
+
+.contact-item a:visited{
+  color:aliceblue
+}
+
+
+
+
+#sticky-footer{
+  background-color: var(--color-primary);
+  max-height: 3rem;
+  padding: 10px 16px 0  16px ;
+  position: sticky;
+  bottom: 0;
+  z-index: 4;
+
+
+}
+
+
+#sticky-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#sticky-footer p{
+ font-size: 10px;
+
+}
+
+
+.footer-element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2px;
+  flex-grow: 1;
+
+}
+
+
+
