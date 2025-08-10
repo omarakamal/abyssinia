@@ -1,0 +1,26 @@
+# -------------------------
+# Build & deploy
+# -------------------------
+# Different rules per deploy context
+
+# -------------------------
+# Caching & security headers
+# -------------------------
+# Long, immutable cache for fingerprinted assets (app.abc123.js, etc.)
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML gets a short cache so updates show quickly
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Example: allow modern cross‑origin isolation if needed for WASM/workers
+# Cross-Origin-Embedder-Policy = "require-corp"
+# Cross-Origin-Opener-Policy = "same-origin"
