@@ -6,7 +6,7 @@
   box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
 /* Container with 3 items: [hamburger] [logo] [placeholder] */

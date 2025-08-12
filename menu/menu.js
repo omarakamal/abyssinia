@@ -193,12 +193,12 @@ menuItems.forEach((item, index) => {
   const isInverted = index % 2 !== 0;
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
-  menuItem.id = `menu-item-${item.itemNumber}`
+  menuItem.id = `menu-item-${item.number}`
   if (isInverted) menuItem.classList.add("invert");
 
   menuItem.innerHTML = `
     <div class="image-wrapper">
-        <img src="${item.src}" alt="${item.transliteration}" class="dish-img" />
+        <img loading=lazy src="${item.src}" alt="${item.transliteration}" class="dish-img" />
         <span class="price">${item.price}</span>
         <span class="item-number">${item.number}</span>
     </div>
