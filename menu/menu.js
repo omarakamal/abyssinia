@@ -5,7 +5,7 @@ const menuItems = [
     transliteration: "dulet",
     price: "3.500",
     description: "Lamb trip with liver and lean meat chopped and cooked in spiced butter with pepper, onion, garlic, and mitmita, served with Ethiopian injera.",
-    src: "" // representative dulet image
+    src: "../public/dulet.jpeg" // representative dulet image
   },
   {
     number: 2,
@@ -13,7 +13,7 @@ const menuItems = [
     transliteration: "kikil",
     price: "3.500",
     description: "Curried lamb stew cooked with exotic spices and mixed with bits of injera, served with Ethiopian injera.",
-    src: "https://tse2.mm.bing.net/th/id/OIP.upq_C6-9HPXl1_paGVC30QHaF5"
+    src: "../public/kikil.jpg"
   },
   {
     number: 3,
@@ -21,7 +21,7 @@ const menuItems = [
     transliteration: "banatu",
     price: "6.000",
     description: "Kikil fitfit, kitfo, cottage cheese, and boiled egg, served on Ethiopian injera.",
-    src: "https://tse4.mm.bing.net/th/id/OIP.bcslIS7xpVUJV_R8TkgClgHaE8"
+    src: "../public/banatu.avif"
   },
   {
     number: 4,
@@ -29,7 +29,7 @@ const menuItems = [
     transliteration: "tibs",
     price: "3.500",
     description: "Tender rib-eye beef tips marinated in berbere, cooked with peppers, onions, garlic, rosemary, and spices, served with injera or flat bread.",
-    src: "https://tse1.mm.bing.net/th/id/OIP.2Yft50rSI-GAISXphoS2BgHaHa"
+    src: "../public/tibs.webp"
   },
   {
     number: 5,
@@ -45,7 +45,7 @@ const menuItems = [
     transliteration: "key wet",
     price: "3.500",
     description: "Beef stew cooked in berbere sauce and spices, served with Ethiopian injera.",
-    src: "" 
+    src: "../public/key-wet.jpg" 
   },
   {
     number: 7,
@@ -53,7 +53,7 @@ const menuItems = [
     transliteration: "alcha wet",
     price: "3.500",
     description: "Curried beef stew cooked with exotic spices and peppers, served with Ethiopian injera.",
-    src: ""
+    src: "../public/alcha-wet.webp"
   },
   {
     number: 8,
@@ -61,7 +61,7 @@ const menuItems = [
     transliteration: "gored gored",
     price: "4.500",
     description: "Lean beef warmed in spiced butter, cooked rare or medium with mitmita sauce, served with Ethiopian injera or flat bread.",
-    src: ""
+    src: "../public/gored-gored.jpg"
   },
   {
     number: 9,
@@ -77,7 +77,7 @@ const menuItems = [
     transliteration: "special kifto with kocho",
     price: "6.600",
     description: "Lean beef chopped and warmed in spiced butter, cooked rare or medium with mitmita, served with cottage cheese and kocho on Ethiopian injera.",
-    src: ""
+    src: "../public/special-kifto.jpg"
   },
   {
     number: 11,
@@ -85,7 +85,7 @@ const menuItems = [
     transliteration: "cornis",
     price: "5.000",
     description: "Lean beef chopped and warmed in spiced butter, mixed with key wet fitfit, served with cottage cheese and gomen on Ethiopian injera.",
-    src: ""
+    src: "../public/cornis.jpeg"
   },
   {
     number: 12,
@@ -93,7 +93,7 @@ const menuItems = [
     transliteration: "quanta firfir",
     price: "3.500",
     description: "Dried beef stewed in berbere sauce and spices, mixed with injera, served with boiled egg on Ethiopian injera.",
-    src: ""
+    src: "../public/quanta-firfir.jpg"
   },
   {
     number: 13,
@@ -101,7 +101,7 @@ const menuItems = [
     transliteration: "tibs firfir",
     price: "3.500",
     description: "Beef stewed in berbere sauce and spices, mixed with injera, served with boiled egg on Ethiopian injera.",
-    src: ""
+    src: "../public/tibs-firfir.jpeg"
   },
   {
     number: 14,
@@ -109,7 +109,7 @@ const menuItems = [
     transliteration: "key tibs",
     price: "3.500",
     description: "Tender beef pieces marinated in berbere, cooked with peppers, onions, garlic, rosemary, and spices, served with Ethiopian injera or flat bread.",
-    src: ""
+    src: "../public/key-tibs.webp"
   },
   {
     number: 15,
@@ -117,7 +117,7 @@ const menuItems = [
     transliteration: "jeba tibs",
     price: "5.000",
     description: "Marinated dried beef cooked with peppers, onions, garlic, rosemary, and spices, served with Ethiopian injera or flat bread.",
-    src: ""
+    src: "../public/jeba-tibs.jpeg"
   },
   {
     number: 16,
@@ -125,7 +125,7 @@ const menuItems = [
     transliteration: "bozena shiro",
     price: "3.500",
     description: "Beef jerky stew cooked with spiced bean flour, exotic spices, and peppers, served with selata on Ethiopian injera.",
-    src: ""
+    src: "../public/bozena-shiro.jpeg"
   },
   {
     number: 17,
@@ -133,7 +133,7 @@ const menuItems = [
     transliteration: "spaghetti with beef",
     price: "3.500",
     description: "Homemade spaghetti with beef sauce and feta cheese.",
-    src: ""
+    src: "../public/spagetti-with-beef.jpeg"
   },
   {
     number: 18,
@@ -141,7 +141,7 @@ const menuItems = [
     transliteration: "chicken",
     price: "3.500",
     description: "Chicken slow-simmered in berbere sauce, served with boiled egg and cottage cheese on Ethiopian injera.",
-    src: ""
+    src: "../public/chicken-ethiopian.jpg"
   },
   {
     number: 19,
@@ -149,7 +149,7 @@ const menuItems = [
     transliteration: "beyeaynetu",
     price: "3.500",
     description: "A platter of various lentil, pea, cabbage, carrot, and potato stews, served with Ethiopian injera.",
-    src: "https://tse2.mm.bing.net/th/id/OIP.upq_C6-9HPXl1_paGVC30QHaF5" // generic platter image might fit
+    src: "../public/Beyaynetu.JPG" // generic platter image might fit
   },
   {
     number: 20,
@@ -157,7 +157,7 @@ const menuItems = [
     transliteration: "maheberawi",
     price: "5.000",
     description: "A special mixed meat platter with beef stew, chicken, tibs, and gomen, served with Ethiopian injera.",
-    src: ""
+    src: "../public/maheberawi.jpg"
   },
   {
     number: 21,
@@ -165,7 +165,7 @@ const menuItems = [
     transliteration: "abyssinia special",
     price: "6.000",
     description: "A grand combination of beef stew, chicken, tibs, kitfo, gomen, cottage cheese, boiled egg, and various vegetable stews, served with two pieces of Ethiopian injera.",
-    src:""  // compilation dish
+    src:"../public/Abysenia-Special.png"  // compilation dish
   },
   {
     number: 22,
@@ -173,7 +173,7 @@ const menuItems = [
     transliteration: "firfir with butter",
     price: "3.500",
     description: "Ethiopian firfir cooked in spiced butter and berbere, mixed with injera.",
-    src: ""
+    src: "../public/fir-fir-with-butter.jpg"
   },
   {
     number: 23,
@@ -181,7 +181,7 @@ const menuItems = [
     transliteration: "kinche with butter",
     price: "3.000",
     description: "Coarsely cracked wheat cooked with spiced butter.",
-    src: ""
+    src: "../public/kinche-with-butter.webp"
   }
 ];
 
